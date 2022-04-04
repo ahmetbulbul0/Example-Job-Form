@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #d1d9d8;
+    transition: 0.2s;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0f12;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea,
+button {
+    width: 100%;
+    font-size: 16px;
+    color: #000000;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+option {
+    color: #000000;
+}
+
+.outForm {
+    margin: 50px;
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    background-color: #12161b;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+form {
+    margin-top: 40px;
+    background-color: #12161b;
+    padding: 25px 50px;
+    border-radius: 15px;
+}
+
+form .line {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .line:nth-child(1) {
+    margin-top: 0;
+}
+
+form .line .barW50 {
+    width: calc(50% - 20px);
+}
+
+form .line .barW100 {
+    width: 100%;
+}
+
+form .line label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.radios {
+    padding: 0 25px;
+}
+
+.radios label {
+    width: fit-content;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkboxes {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.checkboxes div {
+    width: 30%;
+}
+
+.checkboxes label {
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: #0c0f12;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button:hover {
+    background-color: #0c0f12;
+    color: #d1d9d8;
+}
+
+sup {
+    font-size: 20px;
+}
+
+sub {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+    form .line {
+        display: block;
+    }
+
+    form .line .barW50 {
+        width: 100%;
+    }
+
+    form .line .barW50:not(:nth-child(1)) {
+        margin-top: 30px
+    }
+
+    .checkboxes {
+        display: block;
+    }
+
+    .checkboxes div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .outForm {
+        margin: 50px 0;
+    }
+
+    header,
+    form {
+        border-radius: 0;
+    }
+}
