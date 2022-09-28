@@ -1,3 +1,3 @@
-![web_developer_job_form_responsive_1366x768_poster](./git-images/web_developer_job_form_responsive_1366x768_poster.png)
+![example_job_form_1366x768_poster](./git-images/example_job_form_1366x768_poster.png)
 
-# Web-Developer-Job-Form-Responsive
+# Example-Job-Form
