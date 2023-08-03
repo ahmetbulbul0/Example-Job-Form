@@ -1,107 +1,105 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Example Job Form</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
 
-<head>
-    <title>Example Job Form</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-
-<body>
-    <div class="outForm">
-        <header>
-            <h1 id="title">Web Developer Job</h1>
-            <p id="description">We are looking for various web developers for our newly established web software agency, please fill out the form carefully to apply.</p>
-        </header>
-        <form id="survey-form">
-            <div class="line">
-                <div class="barW50">
-                    <label id="name-label"><sup>*</sup>Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="barW50">
-                    <label id="surname-label"><sup>*</sup>Surname:</label>
-                    <input type="text" id="surname" placeholder="Enter your surname" required>
-                </div>
-            </div>
-            <div class="line">
-                <div class="barW100">
-                    <label id="email-label"><sup>*</sup>Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email (@gmail.com, @protonmail.com, @yandex.com, etc...)" required>
-                </div>
-            </div>
-            <div class="line">
-                <div class="barW50">
-                    <label id="number-label"><sup>*</sup>Age:</label>
-                    <input type="number" id="number" min="14" max="65" placeholder="Enter your real age" required/>
-                </div>
-                <div class="barW50">
-                    <label><sup>*</sup>Gender:</label>
-                    <select id="dropdown">
-                        <option selected disabled>Choose your gender</option>
-                        <option>Female</option>
-                        <option>Male</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-            </div>
-            <div class="line">
-                <div class="barW100">
-                    <label><sup>*</sup>Profession:</label>
-                    <div class="radios">
-                        <label><input type="radio" value="fullStack" name="profession">Full Stack</label>
-                        <label><input type="radio" value="backend" name="profession">Backend</label>
-                        <label><input type="radio" value="frontend" name="profession">Frontend</label>
-                        <label><input type="radio" value="other" name="profession">Other</label>
+    <body>
+        <div class="outForm">
+            <header>
+                <h1 id="title">Web Developer Job</h1>
+                <p id="description">We are looking for various web developers for our newly established web software agency, please fill out the form carefully to apply.</p>
+            </header>
+            <form id="survey-form">
+                <div class="line">
+                    <div class="barW50">
+                        <label id="name-label"><sup>*</sup>Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="barW50">
+                        <label id="surname-label"><sup>*</sup>Surname:</label>
+                        <input type="text" id="surname" placeholder="Enter your surname" required />
                     </div>
                 </div>
-            </div>
-            <div class="line">
-                <div class="barW100">
-                    <label><sup>*</sup><sub>(Min 3)</sub>Technologies (Which you can use):</label>
-                    <div class="checkboxes">
-                        <div>
-                            <label><input type="checkbox" value="html" name="technologies">Html</label>
-                            <label><input type="checkbox" value="css" name="technologies">Css</label>
-                            <label><input type="checkbox" value="javascript" name="technologies">JavaScript</label>
-                            <label><input type="checkbox" value="php" name="technologies">Php</label>
-                            <label><input type="checkbox" value="sql" name="technologies">Sql</label>
-                            <label><input type="checkbox" value="aspnet" name="technologies">Asp.Net</label>
-                            <label><input type="checkbox" value="jquery" name="technologies">Jquery</label>
-                        </div>
-                        <div>
-                            <label><input type="checkbox" value="laravel" name="technologies">Laravel</label>
-                            <label><input type="checkbox" value="codeigniter" name="technologies">CodeIgniter</label>
-                            <label><input type="checkbox" value="vue" name="technologies">Vue</label>
-                            <label><input type="checkbox" value="react" name="technologies">React</label>
-                            <label><input type="checkbox" value="angular" name="technologies">Angular</label>
-                            <label><input type="checkbox" value="tailwindcss" name="technologies">TailwindCss</label>
-                            <label><input type="checkbox" value="bootstrap" name="technologies">Bootstrap</label>
-                        </div>
-                        <div>
-                            <label><input type="checkbox" value="postgresql" name="technologies">PostgreSql</label>
-                            <label><input type="checkbox" value="mySql" name="technologies">MySql</label>
-                            <label><input type="checkbox" value="msSql" name="technologies">MsSql</label>
-                            <label><input type="checkbox" value="mongodb" name="technologies">MongoDb</label>
-                            <label><input type="checkbox" value="npm" name="technologies">npm</label>
-                            <label><input type="checkbox" value="yarn" name="technologies">yarn</label>
-                            <label><input type="checkbox" value="git" name="technologies">git</label>
+                <div class="line">
+                    <div class="barW100">
+                        <label id="email-label"><sup>*</sup>Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email (@gmail.com, @protonmail.com, @yandex.com, etc...)" required />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="barW50">
+                        <label id="number-label"><sup>*</sup>Age:</label>
+                        <input type="number" id="number" min="14" max="65" placeholder="Enter your real age" required />
+                    </div>
+                    <div class="barW50">
+                        <label><sup>*</sup>Gender:</label>
+                        <select id="dropdown">
+                            <option selected disabled>Choose your gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="barW100">
+                        <label><sup>*</sup>Profession:</label>
+                        <div class="radios">
+                            <label><input type="radio" value="fullStack" name="profession" />Full Stack</label>
+                            <label><input type="radio" value="backend" name="profession" />Backend</label>
+                            <label><input type="radio" value="frontend" name="profession" />Frontend</label>
+                            <label><input type="radio" value="other" name="profession" />Other</label>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="line">
-                <div class="barW100">
-                    <label>Tell us about yourself:</label>
-                    <textarea placeholder="I like to do this, I do not like to do that, I am such, etc..."></textarea>
+                <div class="line">
+                    <div class="barW100">
+                        <label><sup>*</sup><sub>(Min 3)</sub>Technologies (Which you can use):</label>
+                        <div class="checkboxes">
+                            <div>
+                                <label><input type="checkbox" value="html" name="technologies" />Html</label>
+                                <label><input type="checkbox" value="css" name="technologies" />Css</label>
+                                <label><input type="checkbox" value="javascript" name="technologies" />JavaScript</label>
+                                <label><input type="checkbox" value="php" name="technologies" />Php</label>
+                                <label><input type="checkbox" value="sql" name="technologies" />Sql</label>
+                                <label><input type="checkbox" value="aspnet" name="technologies" />Asp.Net</label>
+                                <label><input type="checkbox" value="jquery" name="technologies" />Jquery</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" value="laravel" name="technologies" />Laravel</label>
+                                <label><input type="checkbox" value="codeigniter" name="technologies" />CodeIgniter</label>
+                                <label><input type="checkbox" value="vue" name="technologies" />Vue</label>
+                                <label><input type="checkbox" value="react" name="technologies" />React</label>
+                                <label><input type="checkbox" value="angular" name="technologies" />Angular</label>
+                                <label><input type="checkbox" value="tailwindcss" name="technologies" />TailwindCss</label>
+                                <label><input type="checkbox" value="bootstrap" name="technologies" />Bootstrap</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" value="postgresql" name="technologies" />PostgreSql</label>
+                                <label><input type="checkbox" value="mySql" name="technologies" />MySql</label>
+                                <label><input type="checkbox" value="msSql" name="technologies" />MsSql</label>
+                                <label><input type="checkbox" value="mongodb" name="technologies" />MongoDb</label>
+                                <label><input type="checkbox" value="npm" name="technologies" />npm</label>
+                                <label><input type="checkbox" value="yarn" name="technologies" />yarn</label>
+                                <label><input type="checkbox" value="git" name="technologies" />git</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="line">
-                <div class="barW100">
-                    <button type="submit" id="submit">Send My Cv</button>
+                <div class="line">
+                    <div class="barW100">
+                        <label>Tell us about yourself:</label>
+                        <textarea placeholder="I like to do this, I do not like to do that, I am such, etc..."></textarea>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </div>
-</body>
-
+                <div class="line">
+                    <div class="barW100">
+                        <button type="submit" id="submit">Send My Cv</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
